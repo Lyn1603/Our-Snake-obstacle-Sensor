@@ -67,7 +67,7 @@ void loop() {
       OnLigne(0,0,0,6);
       OnLigne(15,9,15,15);
       delay(100);
-      OnLigne(,0,6,0);
+      OnLigne(0,0,6,0);
       OnLigne(9,15,15,15);
      
 
