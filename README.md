@@ -1,4 +1,4 @@
-# Our Snack obstacle sensor
+# Our Snake obstacle sensor
 
 
 Hello everyone, 
