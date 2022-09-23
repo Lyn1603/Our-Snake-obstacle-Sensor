@@ -71,6 +71,8 @@ void loop() {
       OnLigne(0,y_gauche,0,y_gauche+5);
       OnLigne(15,y_droit,15,y_droit+5);
       delay(100);
+      OnLigne(0,y_gauche-5,0,y_gauche+5);
+      OnLigne(15,y_droit-5,15,y_droit+5);
    }else{
       y_droit = 5;
       y_gauche = 5;
