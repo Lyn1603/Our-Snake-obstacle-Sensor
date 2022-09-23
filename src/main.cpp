@@ -1,9 +1,12 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
+#include <FastLED.h>
 int OBS = A1;
 int LED = 12;
 #define PIN        12 
 #define NUMPIXELS 16*16
+int y_gauche = 5;
+int y_droit = 5;
 int val ;
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
@@ -45,9 +48,8 @@ void setup() {
     pixels.show(); 
     OnLigne(0,5,0,10);
     OnLigne(15,5,15,10);
-    delay(120);
-    OnLigne(5,0,10,0);
-    OnLigne(5,15,10,15);
+    
+   
 
 
 
@@ -63,15 +65,14 @@ void loop() {
    if(val == 0)
    {
       pixels.clear();
-
-      OnLigne(0,0,0,6);
-      OnLigne(15,9,15,15);
+      y_droit -- ;
+      y_gauche ++;
+      OnLigne(0,y_gauche,0,y_gauche+5);
+      OnLigne(15,y_droit,15,y_droit+5);
       delay(100);
-      OnLigne(0,0,6,0);
-      OnLigne(9,15,15,15);
-     
-
    }else{
+      y_droit = 5;
+      y_gauche = 5;
       OnLigne(0,5,0,10);
       OnLigne(15,5,15,10);
       pixels.clear();
