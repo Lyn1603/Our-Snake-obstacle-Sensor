@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
-#include <FastLED.h>
 int OBS = A1;
 int LED = 12;
 #define PIN        12 
@@ -45,7 +44,7 @@ void setup() {
     pixels.show();   
     delay(50);
   }*/
-  
+
    pixels.clear();
     pixels.show(); 
     OnLigne(0,5,0,10);
