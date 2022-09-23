@@ -1,4 +1,4 @@
-# Our Snake obstacle sensor
+# Our Snakes obstacle sensor
 
 
 Hello everyone, 
