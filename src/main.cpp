@@ -39,11 +39,13 @@ void setup() {
    pinMode(OBS, INPUT);
    pixels.clear();
    pixels.setBrightness(10);
+
    /*for(int i=0; i<NUMPIXELS; i++) {
     pixels.setPixelColor(i, pixels.Color(0, 150, 0));
     pixels.show();   
     delay(50);
   }*/
+  
    pixels.clear();
     pixels.show(); 
     OnLigne(0,5,0,10);
